@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+<h2>My favourite hero is: {{myHero.name}}</h2>
+<p>Heroes</p>
+<ul>
+    <li *ngFor="let hero of heroes">
+        {{ hero.name }}
+    </li>
+</ul>
+<p *ngIf="heroes.length > 3">There are many heroes!</p>
+<br/>
+<click-me></click-me>
+<br/>
+<click-me2></click-me2>
+<br/>
+<key-up1></key-up1>
+<br/>
+<key-up2></key-up2>
+<br/>
+<key-up3></key-up3>
+<br/>
+<key-up4></key-up4>
+<br/>
+<h2>Loop back component</h2>
+<loop-back></loop-back>

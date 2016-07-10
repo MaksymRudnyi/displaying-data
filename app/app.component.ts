@@ -1,24 +1,21 @@
 import { Component } from '@angular/core'
 import { Hero } from './hero'
 import { ClickMeComponent } from './click-me.component'
+import { ClickMe2Component } from './click-me2.component'
+import { keyUpComponent_v1, keyUpComponent_v2, keyUpComponent_v3, keyUpComponent_v4 } from './keyup.component'
+import { LoopBackComponent } from './loop-back.component'
 
 @Component ({
     selector: 'my-app',
-    template: `
-        <h1>{{title}}</h1>
-        <h2>My favourite hero is: {{myHero.name}}</h2>
-        <p>Heroes</p>
-        <ul>
-            <li *ngFor="let hero of heroes">
-                {{ hero.name }}
-            </li>
-        </ul>
-         <p *ngIf="heroes.length > 3">There are many heroes!</p>
-         <br/>
-         <click-me></click-me>
-    `,
+    templateUrl: 'app/app.component.html',
     directives: [
-        ClickMeComponent
+        ClickMeComponent,
+        ClickMe2Component,
+        keyUpComponent_v1,
+        keyUpComponent_v2,
+        keyUpComponent_v3,
+        keyUpComponent_v4,
+        LoopBackComponent
     ]
 })
 

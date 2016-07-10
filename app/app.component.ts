@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import { Hero } from './hero'
+import { ClickMeComponent } from './click-me.component'
 
 @Component ({
     selector: 'my-app',
@@ -13,7 +14,12 @@ import { Hero } from './hero'
             </li>
         </ul>
          <p *ngIf="heroes.length > 3">There are many heroes!</p>
-    `
+         <br/>
+         <click-me></click-me>
+    `,
+    directives: [
+        ClickMeComponent
+    ]
 })
 
 export class AppComponent {
